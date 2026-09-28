@@ -1,0 +1,458 @@
+{
+  "lastCompletedAction": "CLOSED",
+  "physicalRoofPosition": "CLOSED",
+  "canopyState": "AUTO",
+  "lastActionTimestamp": 1790081023854,
+  "recentEvents": [
+    {
+      "id": "roof_1790081013858_nwd5",
+      "action": "CLOSED",
+      "duration": 4.88,
+      "timestamp": 1790081013858,
+      "timeLabel": "12:43:33 PM",
+      "source": "AUTO_WEATHER",
+      "details": "Combined Mode: Sunset has occurred (6:31 PM) — canopy closed for night dew protection"
+    },
+    {
+      "id": "roof_1790080356352_7f4m",
+      "action": "OPEN",
+      "duration": 5.56,
+      "timestamp": 1790080356352,
+      "timeLabel": "12:32:36 PM",
+      "source": "AUTO_WEATHER",
+      "details": "Online Forecast: Clear skies (<30% risk) and dry perimeter across current and nearest locations — open for drying"
+    },
+    {
+      "id": "roof_1790080291077_rwi3",
+      "action": "CLOSED",
+      "duration": 4.88,
+      "timestamp": 1790080291077,
+      "timeLabel": "12:31:31 PM",
+      "source": "AUTO_WEATHER",
+      "details": "LDR sensor detects 34% sunlight intensity (<= 60% threshold) — sealing canopy"
+    },
+    {
+      "id": "roof_1790080282326_3fv5",
+      "action": "OPEN",
+      "duration": 5.56,
+      "timestamp": 1790080282326,
+      "timeLabel": "12:31:22 PM",
+      "source": "AUTO_WEATHER",
+      "details": "Online Forecast: Clear skies (<30% risk) and dry perimeter across current and nearest locations — open for drying"
+    },
+    {
+      "id": "roof_1790080243868_808o",
+      "action": "CLOSED",
+      "duration": 4.88,
+      "timestamp": 1790080243868,
+      "timeLabel": "12:30:43 PM",
+      "source": "AUTO_WEATHER",
+      "details": "Sensors Mode: LDR sensor detects 35% sunlight (<= 60% threshold) — sealing canopy"
+    },
+    {
+      "id": "roof_1790079921648_k54x",
+      "action": "OPEN",
+      "duration": 5.56,
+      "timestamp": 1790079921648,
+      "timeLabel": "12:25:21 PM",
+      "source": "AUTO_WEATHER",
+      "details": "Online Forecast: Clear skies (<30% risk) and dry perimeter across current and nearest locations — open for drying"
+    },
+    {
+      "id": "roof_1790079756161_dlhj",
+      "action": "CLOSED",
+      "duration": 4.88,
+      "timestamp": 1790079756161,
+      "timeLabel": "12:22:36 PM",
+      "source": "AUTO_WEATHER",
+      "details": "LDR sensor detects 22% sunlight intensity (<= 60% threshold) — sealing canopy"
+    },
+    {
+      "id": "roof_1790079750049_0x8t",
+      "action": "OPEN",
+      "duration": 5.56,
+      "timestamp": 1790079750049,
+      "timeLabel": "12:22:30 PM",
+      "source": "AUTO_WEATHER",
+      "details": "Combined Mode: Local bed dry with 72% sunlight (>60%) & nearest 10km perimeter is clear — maintaining solar drying despite online alert"
+    },
+    {
+      "id": "roof_1790079728152_4ifd",
+      "action": "CLOSED",
+      "duration": 4.88,
+      "timestamp": 1790079728152,
+      "timeLabel": "12:22:08 PM",
+      "source": "AUTO_WEATHER",
+      "details": "Priority #1: Rain detected on drying bed sensor plate — sealing canopy immediately to protect arecanuts"
+    },
+    {
+      "id": "roof_1790079711592_7rcn",
+      "action": "OPEN",
+      "duration": 5.56,
+      "timestamp": 1790079711592,
+      "timeLabel": "12:21:51 PM",
+      "source": "AUTO_WEATHER",
+      "details": "Both sensor plate (74% sunlight, dry plate) & regional radar confirm clear — opening for optimal solar radiation"
+    },
+    {
+      "id": "roof_1790079698143_qyh8",
+      "action": "CLOSED",
+      "duration": 4.88,
+      "timestamp": 1790079698143,
+      "timeLabel": "12:21:38 PM",
+      "source": "AUTO_WEATHER",
+      "details": "LDR sensor detects 32% sunlight intensity (<= 60% threshold) — sealing canopy"
+    },
+    {
+      "id": "roof_1790079691096_9mh5",
+      "action": "OPEN",
+      "duration": 5.56,
+      "timestamp": 1790079691096,
+      "timeLabel": "12:21:31 PM",
+      "source": "AUTO_WEATHER",
+      "details": "Both sensor plate (94% sunlight, dry plate) & regional radar confirm clear — opening for optimal solar radiation"
+    },
+    {
+      "id": "roof_1790079668797_hu9v",
+      "action": "CLOSED",
+      "duration": 4.88,
+      "timestamp": 1790079668797,
+      "timeLabel": "12:21:08 PM",
+      "source": "AUTO_WEATHER",
+      "details": "LDR sensor detects 24% sunlight intensity (<= 60% threshold) — sealing canopy"
+    },
+    {
+      "id": "roof_1790079666719_tatc",
+      "action": "STOP",
+      "duration": 0,
+      "timestamp": 1790079666719,
+      "timeLabel": "12:21:06 PM",
+      "source": "EMERGENCY_STOP",
+      "details": "Motor completely terminated by operator. Auto-pilot locked."
+    },
+    {
+      "id": "roof_1790079644276_vxkg",
+      "action": "STOP",
+      "duration": 0,
+      "timestamp": 1790079644276,
+      "timeLabel": "12:20:44 PM",
+      "source": "TEST_INCHING",
+      "details": "Test inching jog released; motor idle"
+    },
+    {
+      "id": "roof_1790079644075_bo7k",
+      "action": "MOMENTARY_CLOSE",
+      "duration": 0,
+      "timestamp": 1790079644075,
+      "timeLabel": "12:20:44 PM",
+      "source": "TEST_INCHING",
+      "details": "Hold-to-close jog active"
+    },
+    {
+      "id": "roof_1790079642076_ufu3",
+      "action": "STOP",
+      "duration": 0,
+      "timestamp": 1790079642076,
+      "timeLabel": "12:20:42 PM",
+      "source": "TEST_INCHING",
+      "details": "Test inching jog released; motor idle"
+    },
+    {
+      "id": "roof_1790079641874_wgdj",
+      "action": "MOMENTARY_CLOSE",
+      "duration": 0,
+      "timestamp": 1790079641874,
+      "timeLabel": "12:20:41 PM",
+      "source": "TEST_INCHING",
+      "details": "Hold-to-close jog active"
+    },
+    {
+      "id": "roof_1790079638042_h7ju",
+      "action": "STOP",
+      "duration": 0,
+      "timestamp": 1790079638042,
+      "timeLabel": "12:20:38 PM",
+      "source": "TEST_INCHING",
+      "details": "Test inching jog released; motor idle"
+    },
+    {
+      "id": "roof_1790079637776_4q4k",
+      "action": "MOMENTARY_OPEN",
+      "duration": 0,
+      "timestamp": 1790079637776,
+      "timeLabel": "12:20:37 PM",
+      "source": "TEST_INCHING",
+      "details": "Hold-to-open jog active"
+    },
+    {
+      "id": "roof_1790079637664_uplk",
+      "action": "STOP",
+      "duration": 0,
+      "timestamp": 1790079637664,
+      "timeLabel": "12:20:37 PM",
+      "source": "TEST_INCHING",
+      "details": "Test inching jog released; motor idle"
+    },
+    {
+      "id": "roof_1790079625527_9djh",
+      "action": "MOMENTARY_OPEN",
+      "duration": 0,
+      "timestamp": 1790079625527,
+      "timeLabel": "12:20:25 PM",
+      "source": "TEST_INCHING",
+      "details": "Hold-to-open jog active"
+    },
+    {
+      "id": "roof_1790079625476_t9uh",
+      "action": "STOP",
+      "duration": 0,
+      "timestamp": 1790079625476,
+      "timeLabel": "12:20:25 PM",
+      "source": "TEST_INCHING",
+      "details": "Test inching jog released; motor idle"
+    },
+    {
+      "id": "roof_1790079625326_dq3m",
+      "action": "MOMENTARY_OPEN",
+      "duration": 0,
+      "timestamp": 1790079625326,
+      "timeLabel": "12:20:25 PM",
+      "source": "TEST_INCHING",
+      "details": "Hold-to-open jog active"
+    },
+    {
+      "id": "roof_1790079622604_aj8j",
+      "action": "STOP",
+      "duration": 0,
+      "timestamp": 1790079622604,
+      "timeLabel": "12:20:22 PM",
+      "source": "TEST_INCHING",
+      "details": "Test inching jog released; motor idle"
+    },
+    {
+      "id": "roof_1790079621995_dwlv",
+      "action": "MOMENTARY_CLOSE",
+      "duration": 0,
+      "timestamp": 1790079621995,
+      "timeLabel": "12:20:21 PM",
+      "source": "TEST_INCHING",
+      "details": "Hold-to-close jog active"
+    },
+    {
+      "id": "roof_1790079621924_2y9l",
+      "action": "STOP",
+      "duration": 0,
+      "timestamp": 1790079621924,
+      "timeLabel": "12:20:21 PM",
+      "source": "TEST_INCHING",
+      "details": "Test inching jog released; motor idle"
+    },
+    {
+      "id": "roof_1790079621803_849g",
+      "action": "MOMENTARY_CLOSE",
+      "duration": 0,
+      "timestamp": 1790079621803,
+      "timeLabel": "12:20:21 PM",
+      "source": "TEST_INCHING",
+      "details": "Hold-to-close jog active"
+    },
+    {
+      "id": "roof_1790079621765_eb69",
+      "action": "STOP",
+      "duration": 0,
+      "timestamp": 1790079621765,
+      "timeLabel": "12:20:21 PM",
+      "source": "TEST_INCHING",
+      "details": "Test inching jog released; motor idle"
+    },
+    {
+      "id": "roof_1790079621642_e01d",
+      "action": "MOMENTARY_CLOSE",
+      "duration": 0,
+      "timestamp": 1790079621642,
+      "timeLabel": "12:20:21 PM",
+      "source": "TEST_INCHING",
+      "details": "Hold-to-close jog active"
+    },
+    {
+      "id": "roof_1790079621592_goqv",
+      "action": "STOP",
+      "duration": 0,
+      "timestamp": 1790079621592,
+      "timeLabel": "12:20:21 PM",
+      "source": "TEST_INCHING",
+      "details": "Test inching jog released; motor idle"
+    },
+    {
+      "id": "roof_1790079621435_epk1",
+      "action": "MOMENTARY_CLOSE",
+      "duration": 0,
+      "timestamp": 1790079621435,
+      "timeLabel": "12:20:21 PM",
+      "source": "TEST_INCHING",
+      "details": "Hold-to-close jog active"
+    },
+    {
+      "id": "roof_1790079614323_iyns",
+      "action": "STOP",
+      "duration": 0,
+      "timestamp": 1790079614323,
+      "timeLabel": "12:20:14 PM",
+      "source": "EMERGENCY_STOP",
+      "details": "Motor completely terminated by operator. Auto-pilot locked."
+    },
+    {
+      "id": "roof_1790079603984_681k",
+      "action": "CLOSED",
+      "duration": 4.88,
+      "timestamp": 1790079603984,
+      "timeLabel": "12:20:03 PM",
+      "source": "AUTO_WEATHER",
+      "details": "LDR sensor detects 25% sunlight intensity (<= 60% threshold) — sealing canopy"
+    },
+    {
+      "id": "roof_1790079602187_ojjs",
+      "action": "STOP",
+      "duration": 0,
+      "timestamp": 1790079602187,
+      "timeLabel": "12:20:02 PM",
+      "source": "TEST_INCHING",
+      "details": "Test inching jog released; motor idle"
+    },
+    {
+      "id": "roof_1790079601959_ck6x",
+      "action": "MOMENTARY_OPEN",
+      "duration": 0,
+      "timestamp": 1790079601959,
+      "timeLabel": "12:20:01 PM",
+      "source": "TEST_INCHING",
+      "details": "Hold-to-open jog active"
+    },
+    {
+      "id": "roof_1790079601407_kvb3",
+      "action": "CLOSED",
+      "duration": 4.88,
+      "timestamp": 1790079601407,
+      "timeLabel": "12:20:01 PM",
+      "source": "AUTO_WEATHER",
+      "details": "LDR sensor detects 25% sunlight intensity (<= 60% threshold) — sealing canopy"
+    },
+    {
+      "id": "roof_1790079600749_wtcc",
+      "action": "STOP",
+      "duration": 0,
+      "timestamp": 1790079600749,
+      "timeLabel": "12:20:00 PM",
+      "source": "TEST_INCHING",
+      "details": "Test inching jog released; motor idle"
+    },
+    {
+      "id": "roof_1790079600547_89uv",
+      "action": "MOMENTARY_OPEN",
+      "duration": 0,
+      "timestamp": 1790079600547,
+      "timeLabel": "12:20:00 PM",
+      "source": "TEST_INCHING",
+      "details": "Hold-to-open jog active"
+    },
+    {
+      "id": "roof_1790079600112_xuek",
+      "action": "CLOSED",
+      "duration": 4.88,
+      "timestamp": 1790079600112,
+      "timeLabel": "12:20:00 PM",
+      "source": "AUTO_WEATHER",
+      "details": "LDR sensor detects 25% sunlight intensity (<= 60% threshold) — sealing canopy"
+    },
+    {
+      "id": "roof_1790079599318_xmz7",
+      "action": "STOP",
+      "duration": 0,
+      "timestamp": 1790079599318,
+      "timeLabel": "12:19:59 PM",
+      "source": "TEST_INCHING",
+      "details": "Test inching jog released; motor idle"
+    },
+    {
+      "id": "roof_1790079599072_ijrn",
+      "action": "MOMENTARY_OPEN",
+      "duration": 0,
+      "timestamp": 1790079599072,
+      "timeLabel": "12:19:59 PM",
+      "source": "TEST_INCHING",
+      "details": "Hold-to-open jog active"
+    },
+    {
+      "id": "roof_1790079598929_uljg",
+      "action": "CLOSED",
+      "duration": 4.88,
+      "timestamp": 1790079598929,
+      "timeLabel": "12:19:58 PM",
+      "source": "AUTO_WEATHER",
+      "details": "LDR sensor detects 25% sunlight intensity (<= 60% threshold) — sealing canopy"
+    },
+    {
+      "id": "roof_1790079598675_bkuq",
+      "action": "STOP",
+      "duration": 0,
+      "timestamp": 1790079598675,
+      "timeLabel": "12:19:58 PM",
+      "source": "TEST_INCHING",
+      "details": "Test inching jog released; motor idle"
+    },
+    {
+      "id": "roof_1790079598396_842f",
+      "action": "MOMENTARY_OPEN",
+      "duration": 0,
+      "timestamp": 1790079598396,
+      "timeLabel": "12:19:58 PM",
+      "source": "TEST_INCHING",
+      "details": "Hold-to-open jog active"
+    },
+    {
+      "id": "roof_1790079598112_z39f",
+      "action": "CLOSED",
+      "duration": 4.88,
+      "timestamp": 1790079598112,
+      "timeLabel": "12:19:58 PM",
+      "source": "AUTO_WEATHER",
+      "details": "LDR sensor detects 25% sunlight intensity (<= 60% threshold) — sealing canopy"
+    },
+    {
+      "id": "roof_1790079598046_xkqp",
+      "action": "STOP",
+      "duration": 0,
+      "timestamp": 1790079598046,
+      "timeLabel": "12:19:58 PM",
+      "source": "TEST_INCHING",
+      "details": "Test inching jog released; motor idle"
+    },
+    {
+      "id": "roof_1790079597809_8ucp",
+      "action": "MOMENTARY_OPEN",
+      "duration": 0,
+      "timestamp": 1790079597809,
+      "timeLabel": "12:19:57 PM",
+      "source": "TEST_INCHING",
+      "details": "Hold-to-open jog active"
+    },
+    {
+      "id": "roof_1790079597332_et1v",
+      "action": "STOP",
+      "duration": 0,
+      "timestamp": 1790079597332,
+      "timeLabel": "12:19:57 PM",
+      "source": "TEST_INCHING",
+      "details": "Test inching jog released; motor idle"
+    },
+    {
+      "id": "roof_1790079597123_ofkm",
+      "action": "MOMENTARY_OPEN",
+      "duration": 0,
+      "timestamp": 1790079597123,
+      "timeLabel": "12:19:57 PM",
+      "source": "TEST_INCHING",
+      "details": "Hold-to-open jog active"
+    }
+  ]
+}

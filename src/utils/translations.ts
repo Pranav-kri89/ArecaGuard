@@ -1,0 +1,240 @@
+import { AppLanguage } from '../types';
+
+export const translations = {
+  en: {
+    appTitle: "Areca Farm Dryer",
+    appSubtitle: "Micro-Location Rain Radar & ESP32 Hub",
+    espConnectionsBtn: "ESP32 Connections",
+    espCodeBtn: "ESP32 Code",
+    technicalPptBtn: "Technical PPT",
+    langToggle: "ಕನ್ನಡ",
+    
+    // Left panel
+    locationTitle: "Micro-Location & Satellite Sky",
+    locationSubtitle: "Google & Open-Meteo High Accuracy",
+    searchPlaceholder: "Type any village, taluk, district, or city...",
+    dayTime: "DAY TIME",
+    nightTime: "NIGHT TIME",
+    rainProbability: "Rain Probability",
+    airHumidity: "Air Humidity",
+    rainRate: "Rain Rate",
+    wind: "Wind",
+    clouds: "Clouds",
+    sixHourRadar: "6-Hour Micro-Rain Radar",
+    hourlyRisk: "Hourly Rain Probability",
+    fetchingSky: "Fetching micro-location satellite weather...",
+
+    // Right panel - Disconnected state
+    telemetryTitle: "Sensor Telemetry & Actuation",
+    telemetrySubtitle: "Physical ESP32 Microcontroller",
+    notConnectedBadge: "ESP32 Not Connected",
+    connectedBadge: "Connected & Live",
+    staleBadge: "Signal Lost (Stale)",
+    connectToEspTitle: "Connect to Physical ESP32",
+    connectToEspSubtitle: "Awaiting incoming telemetry over Wi-Fi • Zero dummy data",
+    serverUrlLabel: "Ingest Endpoint URL (POST)",
+    copyUrlBtn: "Copy URL",
+    copied: "Copied!",
+    listeningStatus: "Live Ingest Monitor: Waiting for first packet from ESP32...",
+    packetsReceivedLabel: "Packets Received",
+    lastSeenLabel: "Last Packet",
+    secondsAgo: "s ago",
+    noDataPrompt: "No dummy data is shown. Connect your physical ESP32 to begin streaming real sensor readings.",
+    
+    // 4-Step Connection Flow
+    step1Title: "Step 1: Open Firmware Code",
+    step1Desc: "Click 'ESP32 Code' at top right, copy the sketch, and paste into Arduino IDE.",
+    step2Title: "Step 2: Board Pin Connections",
+    step2Desc: "Connect DHT22 to Pin D4, Rain Sensor to Pins D34 & D27, Sunlight LDR to Pin D35, and Relay to Pin D26.",
+    step3Title: "Step 3: Enter Wi-Fi & Flash",
+    step3Desc: "Put your 2.4GHz Wi-Fi SSID & Password in the code, select 'ESP32 Dev Module', and click Upload.",
+    step4Title: "Step 4: Power ON & Stream Live",
+    step4Desc: "Power on ESP32. The moment it connects and sends data, this dashboard springs to life.",
+
+    // Sensor individual cards
+    sensorNotConnected: "NOT CONNECTED",
+    sensorReadError: "NOT CONNECTED",
+    fetchingLiveData: "LIVE DATA",
+    checkPin: "Board Pin:",
+    allSensorsActive: "All 3 Sensors Connected & Accurate",
+    sensorDisconnectedAlert: "Hardware Sensor Disconnected",
+    zeroRandomDataGuarantee: "Zero random data shown • Plug in wire to activate",
+    checkPinWires: "Wire disconnected or loose on ESP32 board",
+    dhtWireInstruction: "Connect Data to Pin D4 • 3V3 Power • GND Ground",
+    rainWireInstruction: "Connect AO to Pin D34 & DO to Pin D27 • 3V3 Power • GND Ground",
+    ldrWireInstruction: "Connect AO to Pin D35 • 3V3 Power • GND Ground",
+    dht22Title: "DHT22 Temp & Humidity",
+    dht22PinNote: "Connect Data pin to ESP32 Pin D4 (Power to 3V3, Ground to GND)",
+    rainPlateTitle: "Rain Sensor Plate",
+    rainPlatePinNote: "Connect AO to ESP32 Pin D34 & DO to Pin D27",
+    ldrTitle: "Sunlight Sensor (LDR)",
+    ldrPinNote: "Connect AO to ESP32 Pin D35 (Power to 3V3, Ground to GND)",
+    waterDetected: "WATER DETECTED ON ROOF",
+    dryPlate: "DRY PLATE (NO RAIN)",
+    brightSun: "Bright Sunshine",
+    nightDark: "Night / Dark",
+
+    // Canopy actuator
+    canopyTitle: "Roof Canopy Actuator",
+    roofClosed: "ROOF CLOSED",
+    roofOpen: "ROOF OPEN",
+    btnAuto: "AUTO",
+    btnOpen: "OPEN",
+    btnClose: "CLOSE",
+
+    // Modes
+    modeIsolationTitle: "Decision Mode Isolation",
+    modeCombo: "Combo (Both)",
+    modeSensor: "Sensor Only",
+    modeInternet: "Internet Only",
+    comboDesc: "Fuses ESP32 sensor plate with Google radar. If either predicts or detects rain, canopy immediately seals!",
+    sensorDesc: "Only local hardware rain sensor & DHT22 readings actuate canopy. Internet models are ignored.",
+    internetDesc: "Only Google/Open-Meteo satellite rain radar triggers canopy actuation.",
+    disconnectEspBtn: "Reset Connection",
+    
+    // Wiring & Docs
+    wiringDesignLink: "Wiring Design",
+    espCodeLink: "ESP32 Code",
+
+    // USB Direct Serial
+    connectUsbBtn: "Connect USB (COM4)",
+    connectingUsb: "Connecting COM Port...",
+    usbConnectedBadge: "USB COM Connected",
+    disconnectUsbBtn: "Disconnect USB",
+    wifi302Note: "Direct Wi-Fi Streaming Active: Your ESP32 connects directly over Wi-Fi via the built-in MQTT bridge (test.mosquitto.org). This automatically bypasses all Google authentication and HTTP 302 redirects without requiring USB.",
+    
+    // Top Tabs
+    tabLiveDashboard: "Live Farm Monitor",
+    tabAiAnalytics: "AI Predictions & Analytics",
+    tabHistoryLogs: "Decision History",
+    
+    // AI Analytics
+    aiPredictionTitle: "AI Agronomic & Weather Prediction",
+    aiPredictionSubtitle: "Gemini 3.8 Neural Fusion • Sensors vs Satellite Radar",
+    sixHourProjection: "6-Hour Predictive Timeline",
+    sensorVsSatellite: "Sensors vs. Satellite Radar",
+    dryingEfficiencyGauge: "Solar Drying Efficiency",
+    rotRiskGauge: "Fungal Rot (Koleroga) Risk",
+    aiAskBtn: "Ask AI Agronomist",
+    chatPlaceholder: "Ask about rain prediction, canopy advice, or drying tips...",
+    refreshPrediction: "Re-run AI Analysis",
+  },
+  kn: {
+    appTitle: "ಅಡಿಕೆ ಕೃಷಿ ಡ್ರೈಯರ್",
+    appSubtitle: "ಮೈಕ್ರೋ-ಲೊಕೇಶನ್ ಮಳೆ ರಾಡಾರ್ ಮತ್ತು ಇಎಸ್‌ಪಿ32 ನಿಯಂತ್ರಣ",
+    espConnectionsBtn: "ಇಎಸ್‌ಪಿ32 ವೈರಿಂಗ್",
+    espCodeBtn: "ಇಎಸ್‌ಪಿ32 ಕೋಡ್",
+    technicalPptBtn: "ತಾಂತ್ರಿಕ ಪಿಪಿಟಿ",
+    langToggle: "English",
+    
+    // Left panel
+    locationTitle: "ಸ್ಥಳೀಯ ಉಪಗ್ರಹ ಹವಾಮಾನ",
+    locationSubtitle: "ಗೂಗಲ್ ಮತ್ತು ಓಪನ್-ಮೆಟಿಯೊ ನಿಖರ ಮಾಹಿತಿ",
+    searchPlaceholder: "ಯಾವುದೇ ಗ್ರಾಮ, ತಾಲೂಕು, ಜಿಲ್ಲೆ ಅಥವಾ ನಗರ ಹುಡುಕಿ...",
+    dayTime: "ಹಗಲಿನ ಸಮಯ",
+    nightTime: "ರಾತ್ರಿ ಸಮಯ",
+    rainProbability: "ಮಳೆಯ ಸಂಭವನೀಯತೆ",
+    airHumidity: "ಗಾಳಿಯ ಆರ್ದ್ರತೆ",
+    rainRate: "ಮಳೆಯ ಪ್ರಮಾಣ",
+    wind: "ಗಾಳಿ ವೇಗ",
+    clouds: "ಮೋಡಗಳು",
+    sixHourRadar: "ಮುಂದಿನ 6 ಗಂಟೆಗಳ ಮಳೆ ರಾಡಾರ್",
+    hourlyRisk: "ಪ್ರತಿ ಗಂಟೆಯ ಮಳೆ ಅಪಾಯ",
+    fetchingSky: "ಹವಾಮಾನ ಮಾಹಿತಿ ಪಡೆಯಲಾಗುತ್ತಿದೆ...",
+
+    // Right panel - Disconnected state
+    telemetryTitle: "ಸಂವೇದಕ ಟೆಲಿಮೆಟ್ರಿ ಮತ್ತು ಮೇಲ್ಛಾವಣಿ",
+    telemetrySubtitle: "ಇಎಸ್‌ಪಿ32 ಭೌತಿಕ ಮೈಕ್ರೋಕಂಟ್ರೋಲರ್",
+    notConnectedBadge: "ಇಎಸ್‌ಪಿ32 ಸಂಪರ್ಕಗೊಂಡಿಲ್ಲ",
+    connectedBadge: "ಸಂಪರ್ಕಗೊಂಡಿದೆ (ಲೈವ್)",
+    staleBadge: "ಸಿಗ್ನಲ್ ಕಡಿತಗೊಂಡಿದೆ",
+    connectToEspTitle: "ಭೌತಿಕ ಇಎಸ್‌ಪಿ32 ಸಂಪರ್ಕಿಸಿ",
+    connectToEspSubtitle: "ವೈ-ಫೈ ಮೂಲಕ ಲೈವ್ ಡೇಟಾಗಾಗಿ ಕಾಯಲಾಗುತ್ತಿದೆ • ಯಾವುದೇ ನಕಲಿ ಡೇಟಾ ಇಲ್ಲ",
+    serverUrlLabel: "ಡೇಟಾ ಕಳುಹಿಸಬೇಕಾದ ವಿಳಾಸ (POST)",
+    copyUrlBtn: "ವಿಳಾಸ ಕಾಪಿ ಮಾಡಿ",
+    copied: "ಕಾಪಿ ಮಾಡಲಾಗಿದೆ!",
+    listeningStatus: "ಲೈವ್ ಮಾನಿಟರ್: ಇಎಸ್‌ಪಿ32 ಇಂದ ಮೊದಲ ಪ್ಯಾಕೆಟ್‌ಗಾಗಿ ಕಾಯಲಾಗುತ್ತಿದೆ...",
+    packetsReceivedLabel: "ಸ್ವೀಕರಿಸಿದ ಪ್ಯಾಕೆಟ್‌ಗಳು",
+    lastSeenLabel: "ಕೊನೆಯ ಸಿಗ್ನಲ್",
+    secondsAgo: "ಸೆಕೆಂಡುಗಳ ಹಿಂದೆ",
+    noDataPrompt: "ಯಾವುದೇ ನಕಲಿ ಸಂಖ್ಯೆಗಳನ್ನು ತೋರಿಸಲಾಗುವುದಿಲ್ಲ. ನೈಜ ಸಂವೇದಕ ಡೇಟಾ ಪಡೆಯಲು ನಿಮ್ಮ ಇಎಸ್‌ಪಿ32 ಅನ್ನು ಸಂಪರ್ಕಿಸಿ.",
+    
+    // 4-Step Connection Flow
+    step1Title: "ಹಂತ 1: ಫರ್ಮ್‌ವೇರ್ ಕೋಡ್ ಪಡೆಯಿರಿ",
+    step1Desc: "ಮೇಲ್ಭಾಗದಲ್ಲಿರುವ 'ಇಎಸ್‌ಪಿ32 ಕೋಡ್' ಕ್ಲಿಕ್ ಮಾಡಿ, ಕೋಡ್ ಕಾಪಿ ಮಾಡಿ ಅರ್ಡುಯಿನೋ IDE ನಲ್ಲಿ ಪೇಸ್ಟ್ ಮಾಡಿ.",
+    step2Title: "ಹಂತ 2: ಬೋರ್ಡ್ ಪಿನ್ ಸಂಪರ್ಕಗಳು",
+    step2Desc: "DHT22 ಅನ್ನು ಪಿನ್ D4, ಮಳೆ ಪ್ಲೇಟ್ ಅನ್ನು ಪಿನ್ D34 & D27, LDR ಅನ್ನು ಪಿನ್ D35, ಮತ್ತು ರಿಲೇಯನ್ನು ಪಿನ್ D26 ಗೆ ಜೋಡಿಸಿ.",
+    step3Title: "ಹಂತ 3: ವೈ-ಫೈ ನಮೂದಿಸಿ ಅಪ್‌ಲೋಡ್ ಮಾಡಿ",
+    step3Desc: "ನಿಮ್ಮ 2.4GHz ವೈ-ಫೈ ಹೆಸರು ಮತ್ತು ಪಾಸ್‌ವರ್ಡ್ ನಮೂದಿಸಿ, 'ESP32 Dev Module' ಆಯ್ಕೆಮಾಡಿ ಅಪ್‌ಲೋಡ್ ಮಾಡಿ.",
+    step4Title: "ಹಂತ 4: ಆನ್ ಮಾಡಿ ಲೈವ್ ಡೇಟಾ ಪಡೆಯಿರಿ",
+    step4Desc: "ಇಎಸ್‌ಪಿ32 ಆನ್ ಮಾಡಿ. ಅದು ಡೇಟಾ ಕಳುಹಿಸಿದ ತಕ್ಷಣ ಈ ಡ್ಯಾಶ್‌ಬೋರ್ಡ್ ನೈಜ ಲೈವ್ ಡೇಟಾದೊಂದಿಗೆ ಕಾರ್ಯಾರಂಭ ಮಾಡುತ್ತದೆ.",
+
+    // Sensor individual cards
+    sensorNotConnected: "ಸಂಪರ್ಕಗೊಂಡಿಲ್ಲ",
+    sensorReadError: "ಸಂಪರ್ಕಗೊಂಡಿಲ್ಲ",
+    fetchingLiveData: "ಲೈವ್ ಡೇಟಾ",
+    checkPin: "ಬೋರ್ಡ್ ಪಿನ್:",
+    allSensorsActive: "ಎಲ್ಲಾ 3 ಸಂವೇದಕಗಳು ಸಕ್ರಿಯ ಮತ್ತು ನಿಖರವಾಗಿವೆ",
+    sensorDisconnectedAlert: "ಹಾರ್ಡ್‌ವೇರ್ ಸಂವೇದಕ ಸಂಪರ್ಕ ಕಡಿತಗೊಂಡಿದೆ",
+    zeroRandomDataGuarantee: "ಯಾವುದೇ ನಕಲಿ ಸಂಖ್ಯೆಗಳಿಲ್ಲ • ಸರಿಪಡಿಸಲು ವೈರ್ ಜೋಡಿಸಿ",
+    checkPinWires: "ಇಎಸ್‌ಪಿ32 ಬೋರ್ಡ್‌ನಲ್ಲಿ ವೈರ್ ಸಂಪರ್ಕ ಕಳಚಿದೆ",
+    dhtWireInstruction: "ಡೇಟಾ ವೈರ್ ಅನ್ನು ಪಿನ್ D4 • 3V3 ಪವರ್ • GND ಗೆ ಜೋಡಿಸಿ",
+    rainWireInstruction: "AO ಅನ್ನು ಪಿನ್ D34 & DO ಅನ್ನು ಪಿನ್ D27 • 3V3 • GND ಗೆ ಜೋಡಿಸಿ",
+    ldrWireInstruction: "AO ಅನ್ನು ಪಿನ್ D35 • 3V3 ಪವರ್ • GND ಗೆ ಜೋಡಿಸಿ",
+    dht22Title: "DHT22 ತಾಪಮಾನ ಮತ್ತು ಆರ್ದ್ರತೆ",
+    dht22PinNote: "ಡೇಟಾ ವೈರ್ ಅನ್ನು ಇಎಸ್‌ಪಿ32 ಪಿನ್ D4 ಗೆ ಸಂಪರ್ಕಿಸಿ (3V3 ಮತ್ತು GND)",
+    rainPlateTitle: "ಮಳೆ ಸಂವೇದಕ ಪ್ಲೇಟ್",
+    rainPlatePinNote: "AO ಅನ್ನು ಪಿನ್ D34 ಗೆ ಮತ್ತು DO ಅನ್ನು ಪಿನ್ D27 ಗೆ ಸಂಪರ್ಕಿಸಿ",
+    ldrTitle: "ಸೂರ್ಯನ ಬೆಳಕು ಸಂವೇದಕ (LDR)",
+    ldrPinNote: "AO ಅನ್ನು ಇಎಸ್‌ಪಿ32 ಪಿನ್ D35 ಗೆ ಸಂಪರ್ಕಿಸಿ (3V3 ಮತ್ತು GND)",
+    waterDetected: "ಛಾವಣಿಯ ಮೇಲೆ ಮಳೆ ಹನಿ ಪತ್ತೆಯಾಗಿದೆ!",
+    dryPlate: "ಪ್ಲೇಟ್ ಒಣಗಿದೆ (ಮಳೆ ಇಲ್ಲ)",
+    brightSun: "ಪ್ರಕಾಶಮಾನ ಬಿಸಿಲು",
+    nightDark: "ರಾತ್ರಿ / ಕತ್ತಲೆ",
+
+    // Canopy actuator
+    canopyTitle: "ಡ್ರೈಯರ್ ಮೇಲ್ಛಾವಣಿ ನಿಯಂತ್ರಕ",
+    roofClosed: "ಛಾವಣಿ ಮುಚ್ಚಲಾಗಿದೆ",
+    roofOpen: "ಛಾವಣಿ ತೆರೆದಿದೆ",
+    btnAuto: "ಸ್ವಯಂಚಾಲಿತ",
+    btnOpen: "ತೆರೆಯಿರಿ",
+    btnClose: "ಮುಚ್ಚಿ",
+
+    // Modes
+    modeIsolationTitle: "ನಿರ್ಧಾರ ಮೋಡ್ ಆಯ್ಕೆ",
+    modeCombo: "ಕಾಂಬೋ (ಎರಡೂ)",
+    modeSensor: "ಕೇವಲ ಸಂವೇದಕ",
+    modeInternet: "ಕೇವಲ ಇಂಟರ್ನೆಟ್",
+    comboDesc: "ಇಎಸ್‌ಪಿ32 ಮತ್ತು ಗೂಗಲ್ ರಾಡಾರ್ ಎರಡನ್ನೂ ಒಟ್ಟಿಗೆ ಗಮನಿಸುತ್ತದೆ. ಮಳೆ ಬಂದರೆ ತಕ್ಷಣ ಮುಚ್ಚುತ್ತದೆ!",
+    sensorDesc: "ಕೇವಲ ಸ್ಥಳೀಯ ಮಳೆ ಸಂವೇದಕ ಮತ್ತು DHT22 ಆಧರಿಸಿ ಛಾವಣಿ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ.",
+    internetDesc: "ಕೇವಲ ಇಂಟರ್ನೆಟ್ ಉಪಗ್ರಹ ಹವಾಮಾನ ಮುನ್ಸೂಚನೆ ಆಧರಿಸಿ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ.",
+    disconnectEspBtn: "ಸಂಪರ್ಕ ಮರುಹೊಂದಿಸಿ",
+    
+    // Wiring & Docs
+    wiringDesignLink: "ವೈರಿಂಗ್ ವಿನ್ಯಾಸ",
+    espCodeLink: "ಇಎಸ್‌ಪಿ32 ಕೋಡ್",
+
+    // USB Direct Serial
+    connectUsbBtn: "ಯುಎಸ್‌ಬಿ ಸಂಪರ್ಕಿಸಿ (COM4)",
+    connectingUsb: "COM ಪೋರ್ಟ್‌ಗೆ ಸಂಪರ್ಕಿಸಲಾಗುತ್ತಿದೆ...",
+    usbConnectedBadge: "ಯುಎಸ್‌ಬಿ ಸಂಪರ್ಕಗೊಂಡಿದೆ",
+    disconnectUsbBtn: "ಯುಎಸ್‌ಬಿ ಕಡಿತಗೊಳಿಸಿ",
+    wifi302Note: "ನೇರ ವೈ-ಫೈ ಸ್ಟ್ರೀಮಿಂಗ್ ಸಕ್ರಿಯವಾಗಿದೆ: ಇಎಸ್‌ಪಿ32 ನೇರವಾಗಿ MQTT ಬ್ರಿಡ್ಜ್ ಮೂಲಕ ವೈ-ಫೈಗೆ ಸಂಪರ್ಕಗೊಳ್ಳುತ್ತದೆ. ಇದು ಯಾವುದೇ 302 ಮರುನಿರ್ದೇಶನ ಅಥವಾ ಗೂಗಲ್ ಲಾಗಿನ್ ಇಲ್ಲದೆ ಸರಾಗವಾಗಿ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ.",
+    
+    // Top Tabs
+    tabLiveDashboard: "ಲೈವ್ ಫಾರ್ಮ್ ಮಾನಿಟರ್",
+    tabAiAnalytics: "ಎಐ ಮುನ್ಸೂಚನೆ & ವಿಶ್ಲೇಷಣೆ",
+    tabHistoryLogs: "ನಿರ್ಧಾರ ಇತಿಹಾಸ",
+    
+    // AI Analytics
+    aiPredictionTitle: "ಎಐ ಹವಾಮಾನ ಮತ್ತು ಕೃಷಿ ಮುನ್ಸೂಚನೆ",
+    aiPredictionSubtitle: "ಜೆಮಿನಿ 3.8 ನ್ಯೂರಲ್ ಫ್ಯೂಷನ್ • ಸಂವೇದಕ vs ಉಪಗ್ರಹ ರಾಡಾರ್",
+    sixHourProjection: "ಮುಂದಿನ 6 ಗಂಟೆಗಳ ಮುನ್ಸೂಚನೆ ಟೈಮ್‌ಲೈನ್",
+    sensorVsSatellite: "ಸಂವೇದಕ vs ಉಪಗ್ರಹ ರಾಡಾರ್",
+    dryingEfficiencyGauge: "ಸೌರ ಒಣಗಿಸುವಿಕೆ ದಕ್ಷತೆ",
+    rotRiskGauge: "ಕೊಳೆರೋಗ (ಕಪ್ಪು ಕೊಳೆತ) ಅಪಾಯ",
+    aiAskBtn: "ಎಐ ಕೃಷಿ ತಜ್ಞರನ್ನು ಕೇಳಿ",
+    chatPlaceholder: "ಮಳೆ, ಛಾವಣಿ ಅಥವಾ ಒಣಗಿಸುವಿಕೆ ಬಗ್ಗೆ ಪ್ರಶ್ನೆ ಕೇಳಿ...",
+    refreshPrediction: "ಎಐ ವಿಶ್ಲೇಷಣೆ ನವೀಕರಿಸಿ",
+  }
+};

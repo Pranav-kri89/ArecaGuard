@@ -1,0 +1,10 @@
+{
+  "name": "Remix pranav v2",
+  "description": "One-button ESP32 LED controller with Web Serial port connection, blink/shutdown toggles, and instant copyable Arduino code.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
